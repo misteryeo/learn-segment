@@ -41,7 +41,6 @@ Email: <input name="email" required="" size="75" type="email"/>
       destination: destination, 
       details: details 
     }; 
-  }
     // Example of an Identify call (https://segment.com/docs/connections/spec/)
     analytics.identify('1234', { 
       email: email, 
@@ -51,6 +50,7 @@ Email: <input name="email" required="" size="75" type="email"/>
     analytics.track('Location Submitted', user, function() { 
       window.location.href = ""; 
     });
+  }
 </script> 
   <br><br>
   <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1635&q=80" width="500" height="350"></img>
