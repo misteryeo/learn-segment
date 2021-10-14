@@ -33,13 +33,12 @@ Email: <input name="email" required="" size="75" type="email"/>
     var form = e.target; 
     var email = form["email"].value; 
     var fullname = form["fullname"].value; 
-    var destination = form["location"].value; 
+    var location = form["location"].value; 
     var details = form["details"].value; 
     var user = { 
       email: email, 
       name: fullname, 
-      location: 
-      location, 
+      location: location, 
       details: details 
     }; 
   }
@@ -49,11 +48,11 @@ Email: <input name="email" required="" size="75" type="email"/>
       name: fullname 
     }); 
     // Example of a Track call (https://segment.com/docs/connections/spec/)
-    analytics.track('destination submitted', user, function() { 
+    analytics.track('Location Submitted', user, function() { 
       window.location.href = ""; 
     });
 </script> 
-
+  <br><br>
   <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1635&q=80" width="500" height="350"></img>
   
 </body> 
