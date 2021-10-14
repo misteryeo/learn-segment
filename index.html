@@ -26,6 +26,7 @@ Name: <input name="fullname" required="" size="75" type="text"/>
 Email: <input name="email" required="" size="75" type="email"/> 
 <br><br> <input name="submit" type="submit" value="submit"/> </form> 
 
+
 <script type="text/javascript"> 
   function identify(e){ 
 
@@ -38,19 +39,21 @@ Email: <input name="email" required="" size="75" type="email"/>
     var user = { 
       email: email, 
       name: fullname, 
-      destination: destination, 
+      destination: 
+      destination, 
       details: details 
     }; 
-    // Example of an Identify call (https://segment.com/docs/connections/spec/)
+    // Placeholder for an Identify call
     analytics.identify('1234', { 
       email: email, 
       name: fullname 
     }); 
-    // Example of a Track call (https://segment.com/docs/connections/spec/)
-    analytics.track('Location Submitted', user, function() { 
+    // Placeholder for a Track call
+    analytics.track('destination submitted', user, function() { 
       window.location.href = ""; 
     });
   }
+
 </script> 
   <br><br>
   <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1635&q=80" width="500" height="350"></img>
