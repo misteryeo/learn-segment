@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+
+<html> 
+<head> 
+<title>Signal Superclass Demo<span id="selection-marker-1" class="redactor-selection-marker"></span></title> 
+</head> 
+
+<body> 
+<h1>Best Places To Travel</h1> 
+
+<form name="travel" onsubmit="identify(event)">What is your favorite travel location? <input name="location" required="" size="81" type="text"/> 
+<br><br><br> 
+What would you recommend? (eg. cool things to do, places to visit or restaurants to eat)
+<br><br> 
+<textarea cols="81" name="details" required="" rows="10"> </textarea> 
+<br><br> 
+Name: <input name="fullname" required="" size="75" type="text"/> 
+<br><br> 
+Email: <input name="email" required="" size="75" type="email"/> 
+<br><br> <input name="submit" type="submit" value="submit"/> </form> 
+
+<script type="text/javascript"> 
+  function identify(e){ 
+
+    e.preventDefault(); 
+    var form = e.target; 
+    var email = form["email"].value; 
+    var fullname = form["fullname"].value; 
+    var destination = form["location"].value; 
+    var details = form["details"].value; 
+    var user = { 
+      email: email, 
+      name: fullname, 
+      location: 
+      location, 
+      details: details 
+    }; 
+  }
+
+</script> 
+
+</body> 
+</html>
