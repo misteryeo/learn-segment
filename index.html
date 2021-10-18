@@ -3,60 +3,18 @@
 <html> 
 <head> 
 <title>Signal Superclass Demo</title>
-  <!-- Place your Analytics.js snippet here (https://segment.com/docs/getting-started/02-simple-install/) -->
-  <script>
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="yzVYA8dkANtCUgf3qGuNssl2ASGGJKsP";;analytics.SNIPPET_VERSION="4.15.3";
-  analytics.load("yzVYA8dkANtCUgf3qGuNssl2ASGGJKsP");
-  analytics.page();
-  }}();
-</script>
 </head> 
 
 <body> 
-<h1>Best Places To Travel</h1> 
+<h1>What would you like to learn about?</h1> 
 
-<form name="travel" onsubmit="identify(event)">What is your favorite travel location? <input name="destination" required="" size="81" type="text"/> 
-<br><br><br> 
-What would you recommend? (eg. cool things to do, places to visit or restaurants to eat)
-<br><br> 
-<textarea cols="81" name="details" required="" rows="10"> </textarea> 
-<br><br> 
-Name: <input name="fullname" required="" size="75" type="text"/> 
-<br><br> 
-Email: <input name="email" required="" size="75" type="email"/> 
-<br><br> <input name="submit" type="submit" value="submit"/> </form> 
-
-
-<script type="text/javascript"> 
-  function identify(e){ 
-
-    e.preventDefault(); 
-    var form = e.target; 
-    var email = form["email"].value; 
-    var fullname = form["fullname"].value; 
-    var destination = form["destination"].value; 
-    var details = form["details"].value; 
-    var user = { 
-      email: email, 
-      name: fullname, 
-      destination: 
-      destination, 
-      details: details 
-    }; 
-    // Placeholder for an Identify call
-    analytics.identify('1234', { 
-      email: email, 
-      name: fullname 
-    }); 
-    // Placeholder for a Track call
-    analytics.track('destination submitted', user, function() { 
-      window.location.href = ""; 
-    });
-  }
-
-</script> 
-  <br><br>
-  <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1635&q=80" width="500" height="350"></img>
+<p> 
+  <li>Collecting customer data on your website/app</li>
+  <li>Delivering customer data to marketing and analytics tools</li>
+  <li>Identity resolution & audience building</li>
+  <li>Data governance</li>
+  <li>All of the above!</li>
+</p>
   
 </body> 
 </html>
